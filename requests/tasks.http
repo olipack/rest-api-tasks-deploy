@@ -1,0 +1,32 @@
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?size=5&page=1
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Tarea 5",
+  "description": "trabajo freelance",
+  "done": true
+}
+
+###
+GET http://localhost:3000/api/tasks/62fc0088d9f9534124c1e93
+
+###
+DELETE http://localhost:3000/api/tasks/62fc0900a680e87b6c33008a
+
+###
+PUT http://localhost:3000/api/tasks/62fc0088d9f9534124c1e937
+Content-Type: application/json
+
+{
+  "title": "Crear un sitio web con VUE"
+}
